@@ -1,7 +1,7 @@
+import React, { ReactNode } from 'react';
 import { Icon } from '@iconify/react';
 import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
-import { ReactNode } from 'react';
 import { BiChevronRight } from 'react-icons/bi';
 import { ProgressType } from 'shared/@types/Progress';
 
@@ -10,8 +10,6 @@ type Props = {
 	progress: Omit<ProgressType, 'description'>;
 	children?: ReactNode;
 };
-
-const Dot = () => <>.</>;
 
 const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 	const { t } = useTranslation('experience');

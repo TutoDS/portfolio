@@ -1,5 +1,5 @@
 import lottie from 'lottie-web';
-import { ReactNode, useEffect } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 
 type Props = {
 	className?: string;
@@ -14,6 +14,7 @@ const LottieIcon = ({ className, icon, ...props }: Props) => {
 			loop: true,
 			autoplay: true
 		});
+		// eslint-disable-next-line
 	}, []);
 
 	return <div className={`${className || ''}`} {...props} id={'icon'}></div>;

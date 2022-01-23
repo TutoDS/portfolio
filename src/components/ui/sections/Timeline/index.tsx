@@ -1,3 +1,4 @@
+import React from 'react';
 import EducationTimeline from 'components/ui/sections/Timeline/partials/Education';
 import { Tab } from '@headlessui/react';
 import styles from 'components/ui/sections/SkillsSection/styles.module.scss';

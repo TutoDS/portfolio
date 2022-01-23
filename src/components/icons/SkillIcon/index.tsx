@@ -1,3 +1,4 @@
+import React from 'react';
 import { Icon } from '@iconify/react';
 import { SkillType } from 'shared/@types/Skill';
 

@@ -1,11 +1,12 @@
+import React, { useState } from 'react';
 import SkillIcon from 'components/icons/SkillIcon';
 import ToolIcon from 'components/icons/ToolIcon';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import { ProjectType } from 'shared/@types/Project';
 import SkeletonProjectCard from '../SkeletonProjectCard';
+import slugify from 'shared/functions/slugify';
 
 type Props = {
 	project: ProjectType;
@@ -49,6 +50,7 @@ const ProjectCard = ({ project, ...props }: Props) => {
 					<div className='flex flex-wrap items-center gap-2'>
 						{project.skills.map((skill) => (
 							<SkillIcon
+								key={slugify(skill)}
 								data-tip={skill}
 								skill={skill}
 								className={'text-2xl cursor-pointer'}
@@ -57,6 +59,7 @@ const ProjectCard = ({ project, ...props }: Props) => {
 						{project.tools &&
 							project.tools.map((tool) => (
 								<ToolIcon
+									key={slugify(tool)}
 									data-tip={tool}
 									tool={tool}
 									className={'text-2xl cursor-pointer'}

@@ -1,8 +1,8 @@
+import React, { useContext } from 'react';
 import { Icon } from '@iconify/react';
 import LanguageSwitcher from 'components/LanguageSwitcher';
 import { ThemeModeContext } from 'contexts/ThemeModeContext';
 import Link from 'next/link';
-import { useContext } from 'react';
 
 const Header = () => {
 	const { theme, switchTheme } = useContext(ThemeModeContext);

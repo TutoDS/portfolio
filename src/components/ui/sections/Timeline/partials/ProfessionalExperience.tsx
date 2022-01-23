@@ -1,8 +1,8 @@
+import React, { useEffect, useState } from 'react';
 import ExperienceCard from 'components/cards/ExperienceCard';
 import styles from 'components/ui/sections/Timeline/styles.module.scss';
 import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
-import { useEffect, useState } from 'react';
 import { ProgressType } from 'shared/@types/Progress';
 import { professionalExperienceHistory } from 'shared/data/progress';
 import slugify from 'shared/functions/slugify';
@@ -29,6 +29,7 @@ const ProfessionalExperienceTimeline = () => {
 		) {
 			setYear((prevState) => (parseInt(prevState) - 1).toString());
 		}
+		// eslint-disable-next-line
 	}, []);
 
 	const yearHistory = (yearProp: string) => {

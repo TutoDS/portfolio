@@ -4,6 +4,7 @@ import { ThemeModeProvider } from 'contexts/ThemeModeContext';
 import 'flag-icons/css/flag-icons.min.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import React from 'react';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 	return (

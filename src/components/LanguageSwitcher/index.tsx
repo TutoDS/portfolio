@@ -1,7 +1,7 @@
+import React, { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Fragment, useState } from 'react';
 import { BsChevronDown } from 'react-icons/bs';
 import styles from './styles.module.scss';
 

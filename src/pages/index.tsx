@@ -1,3 +1,4 @@
+import React from 'react';
 import scrollLottie from 'assets/icons/scroll.json';
 import LottieIcon from 'components/icons/LottieIcon';
 import SkillsSection from 'components/ui/sections/SkillsSection';
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
 						<div className='w-full lg:w-6/12 px-4 ml-auto mr-auto text-center'>
 							<div className='pr-12'>
 								<h1 className='text-white font-semibold text-5xl'>
-									"Dê asas" ao seu projeto!
+									Dê asas ao seu projeto!
 								</h1>
 								<p className='mt-4 text-lg text-gray-300'></p>
 							</div>
