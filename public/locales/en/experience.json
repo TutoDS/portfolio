@@ -1,0 +1,19 @@
+{
+	"certificate": "Certificate",
+	"degree": "Informatic Engineering Degree",
+	"education": "Education",
+	"experience": "Professional Experience",
+	"Terminal Linux": "Terminal Linux <small>(Linux Terminal)</small>",
+	"Meu Primeiro Mac": "Meu Primeiro Mac <small>(My First Mac)</small>",
+	"Licenciatura em Engenharia Informática": "Informatic Engineering Deegree",
+	"Curso de PHP & MySQL": "PHP & MySQL Course",
+	"Curso Profissional Técnico de Gestão de Equip. Informáticos <small>(Nivel IV QNQ)</small>": "Professional Course in Computer Equipment Technical <small>(Level IV QNQ)</small>",
+	"Escola Sec. de Marco de Canaveses": "Escola Sec. de Marco de Canaveses <small>(highschool)</small>",
+	"Front-end developer, com manutenção de componentes de front-end através da framework <bold>.NET</bold>.": "Front-end  developer, working with <bold>.NET</bold> framework on maintenance of front-end components.",
+	"Estágio realizado no âmbito da Licenciatura em Engenharia Informática, atuando na área de front-end, recorrendo à biblioteca <bold>React</bold>.": "Internship as part of the curriculum of the Deegree in Computer Engineering, focused on front-end, using <bold>React</bold> library.",
+	"Front-end Developer <separator /> Estágio Curricular": "Front-end Developer <separator /> Trainee",
+	"Front-end Developer <small>(Bolseiro de Iniciação Científica)</small>": "Front-end Developer <small>(Grantee <separator /> Scientific Initiation Scholarship)</small>",
+	"Bolseiro de iniciação científica, envolvendo a criação de protótipos funcionais e exploração de novas abordagens de UI/UX para sistema de auditoria fiscal. Desenvolvimento com a biblioteca <bold>React</bold>.": "Grantee of Scientific Initiation Scolarship, involving the conception of functional prototypes and research approaches of new UI/UX for tax auditing system. Development using the <bold>React</bold> library.",
+	"Full-stack Developer <separator /> Estágio Curricular": "Full-stack Developer <separator /> Trainee",
+	"Estágio realizado no âmbito do curso <bold>CTeSP em Informática de Gestão</bold>, com a realização de uma sistema de Tickets, recorrendo às tecnologias: <bold>PHP</bold>, <bold>MySQL</bold>, <bold>HTML</bold> e <bold>CSS</bold> com <bold>Bootstrap</bold>.": "Internship as part of the curriculum of the <bold>Post-secondary Specialization Programme (TeSP)</bold> studies - Higher Professional Technical Course in Management Informatics, founded on the development of a Ticketing System, using <bold>PHP</bold>, <bold>MySQL</bold>, <bold>HTML</bold> and <bold>CSS</bold> with <bold>Bootstrap</bold>."
+}

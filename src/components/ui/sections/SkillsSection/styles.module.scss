@@ -1,0 +1,574 @@
+:global(.dark) {
+  .tabs {
+    @apply text-white;
+  }
+}
+
+
+.tab-list {
+  @apply flex py-3 px-4 gap-4 rounded-xl items-center justify-center;
+}
+
+.tabs {
+  @apply py-2.5 px-4 leading-5 font-medium rounded-lg ring-offset-0 flex gap-2 items-center text-gray-500 opacity-80;
+
+  &:hover {
+    @apply bg-white text-primary-500 opacity-100;
+  }
+
+  &:focus {
+    @apply outline-none ring-0;
+  }
+
+  &.selected {
+    @apply bg-white shadow text-primary-500 opacity-100;
+  }
+}
+
+
+:global(.dark) {
+  .skill-container,
+  .tool-container {
+    @apply bg-gray-700;
+
+    &:hover {
+      @apply bg-gray-800;
+    }
+  }
+}
+
+.skill-container,
+.tool-container {
+  @apply #{!important};
+
+  @apply flex items-center justify-center w-24 h-24  bg-white rounded-lg shadow border-b-4 border-solid border-transparent;
+
+  &:hover {
+    @apply bg-slate-100;
+  }
+
+  svg {
+    @apply w-12 h-12 text-lg;
+  }
+}
+
+.html {
+  &:hover {
+    @apply border-[#E34F26];
+
+    svg {
+      @apply text-[#E34F26] fill-[#E34F26];
+    }
+  }
+}
+
+.markdown,
+.express,
+.nextjs,
+.webstorm,
+.vercel {
+  &:hover {
+    @apply border-black;
+
+    svg {
+      @apply text-black fill-black;
+    }
+  }
+}
+
+:global(.dark) {
+  .markdown,
+  .express,
+  .nextjs,
+  .github,
+  .webstorm,
+  .vercel {
+    &:hover {
+      @apply border-slate-200;
+
+      svg {
+        @apply text-slate-200 fill-slate-200;
+      }
+    }
+  }
+}
+
+.css {
+  &:hover {
+    @apply border-[#1572B6];
+
+    svg {
+      @apply text-[#1572B6] fill-[#1572B6];
+    }
+  }
+}
+
+.sass {
+  &:hover {
+    @apply border-[#CC6699];
+
+    svg {
+      @apply text-[#CC6699] fill-[#CC6699];
+    }
+  }
+}
+
+.chakra-ui {
+  &:hover {
+    @apply border-[#319795];
+
+    svg {
+      @apply text-[#319795];
+    }
+  }
+}
+
+.tailwind-css {
+  &:hover {
+    @apply border-[#06B6D4];
+
+    svg {
+      @apply text-[#06B6D4];
+    }
+  }
+}
+
+.windicss {
+  &:hover {
+    @apply border-[#48B0F1];
+
+    svg {
+      @apply text-[#48B0F1];
+    }
+  }
+}
+
+.material-ui {
+  &:hover {
+    @apply border-[#007FFF];
+
+    svg {
+      @apply text-[#007FFF];
+    }
+  }
+}
+
+.bootstrap {
+  &:hover {
+    @apply border-[#7952B3];
+
+    svg {
+      @apply text-[#7952B3];
+    }
+  }
+}
+
+.javascript {
+  &:hover {
+    @apply border-[#F7DF1E];
+
+    svg {
+      @apply text-[#F7DF1E];
+    }
+  }
+}
+
+.typescript {
+  &:hover {
+    @apply border-[#3178C6];
+
+    svg {
+      @apply text-[#3178C6];
+    }
+  }
+}
+
+.react {
+  &:hover {
+    @apply border-[#61DAFB];
+
+    svg {
+      @apply text-[#61DAFB];
+    }
+  }
+}
+
+.styled-components {
+  &:hover {
+    @apply border-[#DB7093];
+
+    svg {
+      @apply text-[#DB7093];
+    }
+  }
+}
+
+.angular {
+  &:hover {
+    @apply border-[#DD0031];
+
+    svg {
+      @apply text-[#DD0031];
+    }
+  }
+}
+
+.nodejs {
+  &:hover {
+    @apply border-[#339933];
+
+    svg {
+      @apply text-[#339933];
+    }
+  }
+}
+
+.nestjs {
+  &:hover {
+    @apply border-[#E0234E];
+
+    svg {
+      @apply text-[#E0234E];
+    }
+  }
+}
+
+.php {
+  &:hover {
+    @apply border-[#777BB4];
+
+    svg {
+      @apply text-[#777BB4];
+    }
+  }
+}
+
+.laravel {
+  &:hover {
+    @apply border-[#FF2D20];
+
+    svg {
+      @apply text-[#FF2D20];
+    }
+  }
+}
+
+.postgresql {
+  &:hover {
+    @apply border-[#4169E1];
+
+    svg {
+      @apply text-[#4169E1];
+    }
+  }
+}
+
+.mysql {
+  &:hover {
+    @apply border-[#4479A1];
+
+    svg {
+      @apply text-[#4479A1];
+    }
+  }
+}
+
+.mariadb {
+  &:hover {
+    @apply border-[#003545];
+
+    svg {
+      @apply text-[#003545];
+    }
+  }
+}
+
+.mongodb {
+  &:hover {
+    @apply border-[#47A248];
+
+    svg {
+      @apply text-[#47A248];
+    }
+  }
+}
+
+.firebase {
+  &:hover {
+    @apply border-[#FFCA28];
+
+    svg {
+      @apply text-[#FFCA28];
+    }
+  }
+}
+
+.linux {
+  &:hover {
+    @apply border-[#FCC624];
+
+    svg {
+      @apply text-[#FCC624];
+    }
+  }
+}
+
+.git {
+  &:hover {
+    @apply border-[#F05032];
+
+    svg {
+      @apply text-[#F05032];
+    }
+  }
+}
+
+.npm {
+  &:hover {
+    @apply border-[#CB3837];
+
+    svg {
+      @apply text-[#CB3837];
+    }
+  }
+}
+
+.yarn {
+  &:hover {
+    @apply border-[#2C8EBB];
+
+    svg {
+      @apply text-[#2C8EBB];
+    }
+  }
+}
+
+.docker {
+  &:hover {
+    @apply border-[#2496ED];
+
+    svg {
+      @apply text-[#2496ED];
+    }
+  }
+}
+
+.wordpress {
+  &:hover {
+    @apply border-[#21759B];
+
+    svg {
+      @apply text-[#21759B];
+    }
+  }
+}
+
+.elementor {
+  &:hover {
+    @apply border-[#92003B];
+
+    svg {
+      @apply text-[#92003B];
+    }
+  }
+}
+
+.woocommerce {
+  &:hover {
+    @apply border-[#96588A];
+
+    svg {
+      @apply text-[#96588A];
+    }
+  }
+}
+
+.latex {
+  &:hover {
+    @apply border-[#008080];
+
+    svg {
+      @apply text-[#008080];
+    }
+  }
+}
+
+.github {
+  &:hover {
+    @apply border-[#181717];
+
+    svg {
+      @apply text-[#181717];
+    }
+  }
+}
+
+.gitlab {
+  &:hover {
+    @apply border-[#FCA121];
+
+    svg {
+      @apply text-[#FCA121];
+    }
+  }
+}
+
+.bitbucket {
+  &:hover {
+    @apply border-[#0052CC];
+
+    svg {
+      @apply text-[#0052CC];
+    }
+  }
+}
+
+.visual-studio-code {
+  &:hover {
+    @apply border-[#007ACC];
+
+    svg {
+      @apply text-[#007ACC];
+    }
+  }
+}
+
+.insomnia {
+  &:hover {
+    @apply border-[#4000BF];
+
+    svg {
+      @apply text-[#4000BF];
+    }
+  }
+}
+
+.postman {
+  &:hover {
+    @apply border-[#FF6C37];
+
+    svg {
+      @apply text-[#FF6C37];
+    }
+  }
+}
+
+.jira {
+  &:hover {
+    @apply border-[#0052CC];
+
+    svg {
+      @apply text-[#0052CC];
+    }
+  }
+}
+
+.slack {
+  &:hover {
+    @apply border-[#4A154B];
+
+    svg {
+      @apply text-[#4A154B];
+    }
+  }
+}
+
+.trello {
+  &:hover {
+    @apply border-[#0052CC];
+
+    svg {
+      @apply text-[#0052CC];
+    }
+  }
+}
+
+.adobe-photoshop {
+  &:hover {
+    @apply border-[#31A8FF];
+
+    svg {
+      @apply text-[#31A8FF];
+    }
+  }
+}
+
+.affinity-photo {
+  &:hover {
+    @apply border-[#7E4DD2];
+
+    svg {
+      @apply text-[#7E4DD2];
+    }
+  }
+}
+
+.adobe-illustrator {
+  &:hover {
+    @apply border-[#FF9A00];
+
+    svg {
+      @apply text-[#FF9A00];
+    }
+  }
+}
+
+.affinity-designer {
+  &:hover {
+    @apply border-[#1B72BE];
+
+    svg {
+      @apply text-[#1B72BE];
+    }
+  }
+}
+
+.adobe-xd {
+  &:hover {
+    @apply border-[#FF61F6];
+
+    svg {
+      @apply text-[#FF61F6];
+    }
+  }
+}
+
+.figma {
+  &:hover {
+    @apply border-[#F24E1E];
+
+    svg {
+      @apply text-[#F24E1E];
+    }
+  }
+}
+
+.canva {
+  &:hover {
+    @apply border-[#00C4CC];
+
+    svg {
+      @apply text-[#00C4CC];
+    }
+  }
+}
+
+.netlify {
+  &:hover {
+    @apply border-[#00C7B7];
+
+    svg {
+      @apply text-[#00C7B7];
+    }
+  }
+}
+
+.clickup {
+  &:hover {
+    @apply border-[#7B68EE];
+
+    svg {
+      @apply text-[#7B68EE];
+    }
+  }
+}
