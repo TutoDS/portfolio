@@ -4,5 +4,7 @@
 	"localeDetection": false,
 	"pages": {
 		"*": ["common", "experience", "skills"]
-	}
+	},
+	"keySeparator": false,
+	"defaultNS": "common"
 }

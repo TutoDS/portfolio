@@ -106,7 +106,7 @@ export const educationHistory: ProgressHistoryType = [
 		certificate: '/certificates/git-vscode.pdf'
 	},
 	{
-		title: 'API Restful Javascript com Node.js, Typescript, TypeORM etc',
+		title: 'API Restful Javascript com Node.JS, Typescript, TypeORM etc',
 		startDate: '2021',
 		type: 'education',
 		local: 'Udemy',

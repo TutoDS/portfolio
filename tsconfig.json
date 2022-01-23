@@ -17,6 +17,6 @@
 		"baseUrl": "./src/",
 		"rootDir": "./src/"
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "i18n.js"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "i18n.json"],
 	"exclude": ["node_modules"]
 }

@@ -11,6 +11,8 @@ type Props = {
 	children?: ReactNode;
 };
 
+const Dot = () => <>.</>;
+
 const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 	const { t } = useTranslation('experience');
 
@@ -38,10 +40,11 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 				</small>
 				<h3 className='h4 font-bold'>
 					<Trans
-						i18nKey={`experience:${title.toString()}`}
+						i18nKey={`experience:${title}`}
 						components={{
 							bold: <strong />,
 							small: <small />,
+							dot: <>.</>,
 							separator: (
 								<Icon
 									className={'inline'}
@@ -58,7 +61,7 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 					<Trans
 						i18nKey={`experience:${local.toString()}`}
 						components={{ bold: <strong />, small: <small /> }}
-						defaultTrans={local}
+						fallback={local}
 					/>
 				</div>
 
