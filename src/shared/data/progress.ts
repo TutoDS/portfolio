@@ -64,7 +64,7 @@ export const educationHistory: ProgressHistoryType = [
 		certificate: '/certificates/mac-shortcuts.pdf'
 	},
 	{
-		title: 'Beginner\'s guide to the Mac OS X Command Line (Terminal)',
+		title: "Beginner's guide to the Mac OS X Command Line (Terminal)",
 		startDate: '2021',
 		type: 'education',
 		local: 'Udemy',
@@ -146,7 +146,8 @@ export const educationHistory: ProgressHistoryType = [
 		type: 'education',
 		local: 'Udemy',
 		certificate: '/certificates/my-first-mac.pdf'
-	}];
+	}
+];
 
 export const professionalExperienceHistory: ProgressHistoryType = [
 	{
@@ -155,16 +156,14 @@ export const professionalExperienceHistory: ProgressHistoryType = [
 		endDate: 'Atualidade',
 		title: 'Junior Front-end Developer',
 		local: 'Everis',
-		description:
-			`Front-end developer, com manutenção de componentes de front-end através da framework <bold>.NET</bold>.`
+		description: `Front-end developer, com manutenção de componentes de front-end através da framework <bold>.NET</bold>.`
 	},
 	{
 		type: 'work',
 		startDate: '2021',
 		title: 'Front-end Developer <separator /> Estágio Curricular',
 		local: 'Jimmy Boys',
-		description:
-			`Estágio realizado no âmbito da Licenciatura em Engenharia Informática, atuando na área de front-end, recorrendo à biblioteca <bold>React</bold>.`
+		description: `Estágio realizado no âmbito da Licenciatura em Engenharia Informática, atuando na área de front-end, recorrendo à biblioteca <bold>React</bold>.`
 	},
 	{
 		type: 'work',
@@ -172,8 +171,7 @@ export const professionalExperienceHistory: ProgressHistoryType = [
 		endDate: '2020',
 		title: 'Front-end Developer <small>(Bolseiro de Iniciação Científica)</small>',
 		local: 'Petapilot / ESTG',
-		description:
-			`Bolseiro de iniciação científica, envolvendo a criação de protótipos funcionais e exploração de novas abordagens de UI/UX para sistema de auditoria fiscal. Desenvolvimento com a biblioteca <bold>React</bold>.`
+		description: `Bolseiro de iniciação científica, envolvendo a criação de protótipos funcionais e exploração de novas abordagens de UI/UX para sistema de auditoria fiscal. Desenvolvimento com a biblioteca <bold>React</bold>.`
 	},
 	{
 		type: 'work',

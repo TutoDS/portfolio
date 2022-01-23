@@ -1,18 +1,17 @@
 import scrollLottie from 'assets/icons/scroll.json';
+import LottieIcon from 'components/icons/LottieIcon';
 import SkillsSection from 'components/ui/sections/SkillsSection';
 import Timeline from 'components/ui/sections/Timeline';
 import type { NextPage } from 'next';
-import { useRef } from 'react';
-import Lottie from 'react-lottie';
 
 const Home: NextPage = () => {
-	const sectionRef = useRef<null | HTMLElement>(null);
+	// const sectionRef = useRef<null | HTMLElement>(null);
 
-	const executeScroll = () =>
-		sectionRef.current != null &&
-		sectionRef.current.scrollIntoView({
-			behavior: 'smooth'
-		});
+	// const executeScroll = () =>
+	// 	sectionRef.current != null &&
+	// 	sectionRef.current.scrollIntoView({
+	// 		behavior: 'smooth'
+	// 	});
 
 	return (
 		<>
@@ -37,25 +36,12 @@ const Home: NextPage = () => {
 									"Dê asas" ao seu projeto!
 								</h1>
 								<p className='mt-4 text-lg text-gray-300'></p>
-
-								<button
-									className={'bg-transparent border-0'}
-									onClick={executeScroll}
-								>
-									<Lottie
-										width={'20px'}
-										options={{
-											loop: true,
-											autoplay: true,
-											animationData: scrollLottie,
-											rendererSettings: {
-												className: 'pointer',
-												preserveAspectRatio: 'xMidYMid slice'
-											}
-										}}
-									/>
-								</button>
 							</div>
+
+							<LottieIcon
+								icon={scrollLottie}
+								className={'w-[20px] inline-flex justify-center'}
+							/>
 						</div>
 					</div>
 				</div>
@@ -81,7 +67,7 @@ const Home: NextPage = () => {
 				</div>
 			</div>
 
-			<SkillsSection ref={sectionRef} />
+			<SkillsSection />
 
 			<Timeline />
 			<div className={'mx-auto container p-4'}>
