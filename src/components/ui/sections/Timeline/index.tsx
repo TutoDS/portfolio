@@ -1,16 +1,16 @@
-import { useTranslation } from 'next-i18next';
 import EducationTimeline from 'components/ui/sections/Timeline/partials/Education';
 import { Tab } from '@headlessui/react';
 import styles from 'components/ui/sections/SkillsSection/styles.module.scss';
 import { Icon } from '@iconify/react';
 import ProfessionalExperienceTimeline from 'components/ui/sections/Timeline/partials/ProfessionalExperience';
+import useTranslation from 'next-translate/useTranslation';
 
 type Props = {
 	className?: string;
 };
 
 const Timeline = ({ className, ...props }: Props) => {
-	const { t } = useTranslation("experience");
+	const { t } = useTranslation('experience');
 
 	const tabStyling = ({ selected }: { selected: boolean }) =>
 		`${styles['tabs']} ${selected && styles['selected']}`;
@@ -18,11 +18,7 @@ const Timeline = ({ className, ...props }: Props) => {
 	return (
 		<div className={`${className || ''} mx-auto container px-4 py-12`} {...props}>
 			<Tab.Group>
-				<Tab.List
-					className={
-						`${styles['tab-list']}`
-					}
-				>
+				<Tab.List className={`${styles['tab-list']}`}>
 					<Tab className={tabStyling}>
 						<Icon icon={'vaadin:academy-cap'} />
 						{t('education')}

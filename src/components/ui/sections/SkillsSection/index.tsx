@@ -2,8 +2,8 @@ import { Tab } from '@headlessui/react';
 import { Icon } from '@iconify/react';
 import SkillIcon from 'components/icons/SkillIcon';
 import ToolIcon from 'components/icons/ToolIcon';
-import { useTranslation } from 'next-i18next';
-import { forwardRef } from 'react';
+import Trans from 'next-translate/Trans';
+import useTranslation from 'next-translate/useTranslation';
 import { RiDoubleQuotesR } from 'react-icons/ri';
 import ReactTooltip from 'react-tooltip';
 import tools from 'shared/data/tools';
@@ -11,19 +11,19 @@ import slugify from 'shared/functions/slugify';
 import useSkills from 'shared/hooks/useSkills';
 import styles from './styles.module.scss';
 
-const SkillsSection = forwardRef<HTMLElement, {}>(({ ...props }, ref) => {
+const SkillsSection = ({ ...props }) => {
 	const { t } = useTranslation('skills');
-
-	console.log(t('skills'));
 
 	const tabStyling = ({ selected }: { selected: boolean }) =>
 		`${styles['tabs']} ${selected && styles['selected']}`;
 
 	return (
-		<section className={'mx-auto container px-4 py-12'} {...props} ref={ref}>
+		<section className={'mx-auto container px-4 py-12'} {...props}>
 			<h2 className={'mb-2 text-4xl'}>{t('skills')}</h2>
 
-			<p>{/* <Trans i18nKey={'skillsDescription'} components={{ bold: <strong /> }} /> */}</p>
+			<p>
+				<Trans i18nKey={'skills:skillsDescription'} components={{ bold: <strong /> }} />
+			</p>
 
 			<div
 				className={
@@ -214,6 +214,6 @@ const SkillsSection = forwardRef<HTMLElement, {}>(({ ...props }, ref) => {
 			</Tab.Group>
 		</section>
 	);
-});
+};
 
 export default SkillsSection;

@@ -1,0 +1,8 @@
+{
+	"locales": ["en", "pt"],
+	"defaultLocale": "pt",
+	"localeDetection": false,
+	"pages": {
+		"*": ["common", "experience", "skills"]
+	}
+}

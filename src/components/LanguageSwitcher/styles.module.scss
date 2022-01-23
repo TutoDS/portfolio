@@ -1,8 +1,8 @@
 .language-btn {
 	@apply flex gap-2 items-center px-2 py-1 rounded w-full;
 
-	&:disabled {
-		@apply opacity-25;
+	&.disabled {
+		@apply opacity-25 pointer-events-none;
 	}
 
 	&:hover {

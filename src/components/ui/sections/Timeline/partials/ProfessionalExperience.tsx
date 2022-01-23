@@ -1,6 +1,7 @@
 import ExperienceCard from 'components/cards/ExperienceCard';
 import styles from 'components/ui/sections/Timeline/styles.module.scss';
-import { useTranslation } from 'next-i18next';
+import Trans from 'next-translate/Trans';
+import useTranslation from 'next-translate/useTranslation';
 import { useEffect, useState } from 'react';
 import { ProgressType } from 'shared/@types/Progress';
 import { professionalExperienceHistory } from 'shared/data/progress';
@@ -93,19 +94,12 @@ const ProfessionalExperienceTimeline = () => {
 										key={slugify(progress.title)}
 										progress={progress}
 									>
-										<div className={'text-sm mb-1'}>
-											{/* <Trans
-												i18nKey={progress.local.toString()}
+										{progress.description && (
+											<Trans
+												i18nKey={progress.description.toString()}
 												components={{ bold: <strong />, small: <small /> }}
-											/> */}
-										</div>
-
-										{/* {progress.description && (
-											// <Trans
-											// 	i18nKey={progress.description.toString()}
-											// 	components={{ bold: <strong />, small: <small /> }}
-											// />
-										)} */}
+											/>
+										)}
 									</ExperienceCard>
 								);
 							})}

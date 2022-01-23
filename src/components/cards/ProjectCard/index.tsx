@@ -3,7 +3,7 @@ import ToolIcon from 'components/icons/ToolIcon';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { useTranslation } from 'next-i18next';
+import useTranslation from 'next-translate/useTranslation';
 import { ProjectType } from 'shared/@types/Project';
 import SkeletonProjectCard from '../SkeletonProjectCard';
 
