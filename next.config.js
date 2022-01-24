@@ -1,5 +1,5 @@
 const path = require('path');
-const nextTranslate = require('next-translate');
+const { i18n } = require('./next-i18next.config');
 
 module.exports = {
 	trailingSlash: true,
@@ -7,5 +7,5 @@ module.exports = {
 		domains: ['source.unsplash.com']
 	},
 
-	...nextTranslate()
+	i18n
 };

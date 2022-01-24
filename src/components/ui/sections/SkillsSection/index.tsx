@@ -1,10 +1,9 @@
-import React from 'react';
 import { Tab } from '@headlessui/react';
 import { Icon } from '@iconify/react';
 import SkillIcon from 'components/icons/SkillIcon';
 import ToolIcon from 'components/icons/ToolIcon';
-import Trans from 'next-translate/Trans';
-import useTranslation from 'next-translate/useTranslation';
+import { Trans, useTranslation } from 'next-i18next';
+import React from 'react';
 import { RiDoubleQuotesR } from 'react-icons/ri';
 import ReactTooltip from 'react-tooltip';
 import tools from 'shared/data/tools';

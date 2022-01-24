@@ -1,7 +1,6 @@
-import React, { ReactNode } from 'react';
 import { Icon } from '@iconify/react';
-import Trans from 'next-translate/Trans';
-import useTranslation from 'next-translate/useTranslation';
+import { Trans, useTranslation } from 'next-i18next';
+import React, { ReactNode } from 'react';
 import { BiChevronRight } from 'react-icons/bi';
 import { ProgressType } from 'shared/@types/Progress';
 
@@ -50,7 +49,7 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 								/>
 							)
 						}}
-						defaultTrans={title}
+						fallback={title}
 					/>
 				</h3>
 			</header>

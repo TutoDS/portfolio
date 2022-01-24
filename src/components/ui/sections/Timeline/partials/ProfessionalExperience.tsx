@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
 import ExperienceCard from 'components/cards/ExperienceCard';
 import styles from 'components/ui/sections/Timeline/styles.module.scss';
-import Trans from 'next-translate/Trans';
-import useTranslation from 'next-translate/useTranslation';
+import { Trans, useTranslation } from 'next-i18next';
+import React, { useEffect, useState } from 'react';
 import { ProgressType } from 'shared/@types/Progress';
 import { professionalExperienceHistory } from 'shared/data/progress';
 import slugify from 'shared/functions/slugify';

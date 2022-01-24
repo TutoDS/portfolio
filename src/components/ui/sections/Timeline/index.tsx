@@ -1,10 +1,10 @@
-import React from 'react';
-import EducationTimeline from 'components/ui/sections/Timeline/partials/Education';
 import { Tab } from '@headlessui/react';
-import styles from 'components/ui/sections/SkillsSection/styles.module.scss';
 import { Icon } from '@iconify/react';
+import styles from 'components/ui/sections/SkillsSection/styles.module.scss';
+import EducationTimeline from 'components/ui/sections/Timeline/partials/Education';
 import ProfessionalExperienceTimeline from 'components/ui/sections/Timeline/partials/ProfessionalExperience';
-import useTranslation from 'next-translate/useTranslation';
+import { useTranslation } from 'next-i18next';
+import React from 'react';
 
 type Props = {
 	className?: string;

@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
 import SkillIcon from 'components/icons/SkillIcon';
 import ToolIcon from 'components/icons/ToolIcon';
+import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
-import useTranslation from 'next-translate/useTranslation';
+import React, { useState } from 'react';
 import { ProjectType } from 'shared/@types/Project';
-import SkeletonProjectCard from '../SkeletonProjectCard';
 import slugify from 'shared/functions/slugify';
+import SkeletonProjectCard from '../SkeletonProjectCard';
 
 type Props = {
 	project: ProjectType;
