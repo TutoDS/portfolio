@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react';
-import { Trans, useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next';
 import React, { ReactNode } from 'react';
 import { BiChevronRight } from 'react-icons/bi';
 import { ProgressType } from 'shared/@types/Progress';
@@ -36,7 +36,8 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 					)}
 				</small>
 				<h3 className='h4 font-bold'>
-					<Trans
+					{t(title)}
+					{/* <Trans
 						i18nKey={`experience:${title}`}
 						components={{
 							bold: <strong />,
@@ -50,16 +51,17 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 							)
 						}}
 						fallback={title}
-					/>
+					/> */}
 				</h3>
 			</header>
 			<div className='text-gray-600 dark:text-gray-400 grow my-1'>
 				<div className={'text-sm dark:text-white mb-2'}>
-					<Trans
+					{t(local)}
+					{/* <Trans
 						i18nKey={`experience:${local.toString()}`}
 						components={{ bold: <strong />, small: <small /> }}
 						fallback={local}
-					/>
+					/> */}
 				</div>
 
 				{children && children}

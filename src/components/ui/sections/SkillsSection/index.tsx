@@ -22,7 +22,8 @@ const SkillsSection = ({ ...props }) => {
 			<h2 className={'mb-2 text-4xl'}>{t('skills')}</h2>
 
 			<p>
-				<Trans i18nKey={'skills:skillsDescription'} components={{ bold: <strong /> }} />
+				{t('skillsDescription')}
+				{/* <Trans i18nKey={'skills:skillsDescription'} components={{ bold: <strong /> }} /> */}
 			</p>
 
 			<div
