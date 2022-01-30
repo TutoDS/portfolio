@@ -4,7 +4,7 @@ import Timeline from 'components/ui/sections/Timeline';
 import { Helmet } from 'react-helmet-async';
 import styles from './styles.module.scss';
 
-const App = () => {
+const Home = () => {
 	return (
 		<>
 			<Helmet>
@@ -34,4 +34,4 @@ const App = () => {
 	);
 };
 
-export default App;
+export default Home;
