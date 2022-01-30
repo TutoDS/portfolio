@@ -1,0 +1,40 @@
+import { SkillsType } from 'shared/@types/Skill';
+
+const skills: SkillsType = [
+	{ name: 'HTML', area: 'Front-end' },
+	{ name: 'Markdown', area: 'Others' },
+	{ name: 'CSS', area: 'Front-end' },
+	{ name: 'Sass', area: 'Front-end' },
+	{ name: 'Chakra UI', area: 'Front-end' },
+	{ name: 'Tailwind CSS', area: 'Front-end' },
+	{ name: 'WindiCSS', area: 'Front-end' },
+	{ name: 'Material UI', area: 'Front-end' },
+	{ name: 'Bootstrap', area: 'Front-end' },
+	{ name: 'JavaScript', area: 'Front-end' },
+	{ name: 'TypeScript', area: 'Front-end' },
+	{ name: 'React', area: 'Front-end' },
+	{ name: 'NextJS', area: 'Front-end' },
+	{ name: 'Styled Components', area: 'Front-end' },
+	{ name: 'Angular', area: 'Front-end' },
+	{ name: 'NodeJS', area: 'Back-end' },
+	{ name: 'NestJS', area: 'Back-end' },
+	{ name: 'Express', area: 'Back-end' },
+	{ name: 'PHP', area: 'Back-end' },
+	{ name: 'Laravel', area: 'Back-end' },
+	{ name: 'PostgreSQL', area: 'Databases' },
+	{ name: 'MySQL', area: 'Databases' },
+	{ name: 'MariaDB', area: 'Databases' },
+	{ name: 'MongoDB', area: 'Databases' },
+	{ name: 'Firebase', area: 'Databases' },
+	{ name: 'Linux', area: 'Others' },
+	{ name: 'Git', area: 'Others' },
+	{ name: 'NPM', area: 'Others' },
+	{ name: 'Yarn', area: 'Others' },
+	{ name: 'Docker', area: 'DevOps' },
+	{ name: 'WordPress', area: 'Others' },
+	{ name: 'Elementor', area: 'Others' },
+	{ name: 'WooCommerce', area: 'Others' },
+	{ name: 'Latex', area: 'Others' }
+];
+
+export default skills;
