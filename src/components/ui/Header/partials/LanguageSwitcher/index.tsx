@@ -35,9 +35,10 @@ const LanguageSwitcher = () => {
 			<Helmet>
 				<html lang={language} />
 
-				<title itemProp='name' lang={language} />
+				{/* <title itemProp='name' lang={language}></title> */}
 
 				<meta httpEquiv='content-language' content={language} />
+				<meta property='og:locale' content={language} />
 			</Helmet>
 
 			<Menu as='div' className='relative inline-block text-left'>

@@ -8,8 +8,9 @@ const Home = () => {
 	return (
 		<>
 			<Helmet>
-				<title>Portfolio</title>
+				<title>Home Page</title>
 			</Helmet>
+
 			<Header />
 
 			<section className='mb-16 group text-center'>
