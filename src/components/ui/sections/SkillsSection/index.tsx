@@ -1,9 +1,13 @@
 import { Tab } from '@headlessui/react';
-import { Icon } from '@iconify/react';
 import SkillIcon from 'components/icons/SkillIcon';
 import ToolIcon from 'components/icons/ToolIcon';
 import { Trans, useTranslation } from 'react-i18next';
+import { AiFillDatabase } from 'react-icons/ai';
+import { BsHddNetworkFill } from 'react-icons/bs';
+import { CgWebsite } from 'react-icons/cg';
 import { RiDoubleQuotesR } from 'react-icons/ri';
+import { SiLinuxcontainers } from 'react-icons/si';
+import { VscJson, VscTools } from 'react-icons/vsc';
 import ReactTooltip from 'react-tooltip';
 import tools from 'shared/data/tools';
 import slugify from 'shared/functions/slugify';
@@ -47,27 +51,27 @@ const SkillsSection = ({ ...props }) => {
 			<Tab.Group>
 				<Tab.List className={`${styles['tab-list']}`}>
 					<Tab className={tabStyling}>
-						<Icon icon={'carbon:application-web'} />
+						<CgWebsite />
 						Front-end
 					</Tab>
 					<Tab className={tabStyling}>
-						<Icon icon={'uil:server-network'} />
+						<BsHddNetworkFill />
 						Back-end
 					</Tab>
 					<Tab className={tabStyling}>
-						<Icon icon={'carbon:container-registry'} />
+						<SiLinuxcontainers />
 						DevOps
 					</Tab>
 					<Tab className={tabStyling}>
-						<Icon icon={'healthicons:database-outline'} />
+						<AiFillDatabase />
 						{t('databases')}
 					</Tab>
 					<Tab className={tabStyling}>
-						<Icon icon={'mdi:code-json'} />
+						<VscJson />
 						{t('others')}
 					</Tab>
 					<Tab className={tabStyling}>
-						<Icon icon={'fluent:window-dev-tools-20-regular'} />
+						<VscTools />
 						{t('tools')}
 					</Tab>
 				</Tab.List>

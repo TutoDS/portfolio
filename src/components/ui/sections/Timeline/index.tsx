@@ -5,6 +5,8 @@ import EducationTimeline from 'components/ui/sections/Timeline/partials/Educatio
 import ProfessionalExperienceTimeline from 'components/ui/sections/Timeline/partials/ProfessionalExperience';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { BsBriefcaseFill } from 'react-icons/bs';
+import { FaGraduationCap } from 'react-icons/fa';
 
 type Props = {
 	className?: string;
@@ -24,11 +26,11 @@ const Timeline = ({ className, ...props }: Props) => {
 			<Tab.Group>
 				<Tab.List className={`${styles['tab-list']}`}>
 					<Tab className={tabStyling}>
-						<Icon icon={'vaadin:academy-cap'} />
+						<FaGraduationCap />
 						{t('education')}
 					</Tab>
 					<Tab className={tabStyling}>
-						<Icon icon={'clarity:briefcase-line'} />
+						<BsBriefcaseFill />
 						{t('experience')}
 					</Tab>
 				</Tab.List>
