@@ -1,7 +1,9 @@
-import { Icon } from '@iconify/react';
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { BiChevronRight } from 'react-icons/bi';
+import { BsBriefcaseFill } from 'react-icons/bs';
+import { FaGraduationCap } from 'react-icons/fa';
+import { HiOutlineMinus } from 'react-icons/hi';
 import { ProgressType } from 'shared/@types/Progress';
 
 type Props = {
@@ -15,6 +17,9 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 
 	const { title, startDate, endDate, certificate, type, local } = progress;
 
+	const iconStyles =
+		'dark:text-secondary-500 text-primary-500 md:text-5xl text-xl mb-3';
+
 	return (
 		<article
 			{...props}
@@ -23,25 +28,18 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 			}`}
 		>
 			<header>
-				<Icon
-					className={
-						'dark:text-secondary-500 text-primary-500 md:text-5xl text-xl mb-3'
-					}
-					icon={
-						type === 'education'
-							? 'vaadin:academy-cap'
-							: 'clarity:briefcase-line'
-					}
-				/>
+				{type === 'education' ? (
+					<FaGraduationCap className={iconStyles} />
+				) : (
+					<BsBriefcaseFill className={iconStyles} />
+				)}
 
 				<small className={'inline-flex gap-1 items-center'}>
 					{startDate}
 					{endDate && (
 						<>
-							<Icon
-								icon={'fluent:line-horizontal-1-20-regular'}
-							/>
-							{endDate}
+							<HiOutlineMinus className={'inline'} />
+							{endDate === 'Atualidade' ? t(endDate) : endDate}
 						</>
 					)}
 				</small>
@@ -52,12 +50,7 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 							bold: <strong />,
 							small: <small />,
 							dot: <>.</>,
-							separator: (
-								<Icon
-									className={'inline'}
-									icon={'fluent:line-horizontal-1-20-regular'}
-								/>
-							)
+							separator: <HiOutlineMinus className={'inline'} />
 						}}
 						fallback={title}
 					/>

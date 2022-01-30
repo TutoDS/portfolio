@@ -1,5 +1,39 @@
-import React from 'react';
-import { Icon } from '@iconify/react';
+import { FaElementor } from 'react-icons/fa';
+import {
+	SiAngular,
+	SiBootstrap,
+	SiChakraui,
+	SiCss3,
+	SiDocker,
+	SiExpress,
+	SiFirebase,
+	SiGit,
+	SiHtml5,
+	SiJavascript,
+	SiLaravel,
+	SiLatex,
+	SiLinux,
+	SiMariadb,
+	SiMarkdown,
+	SiMaterialui,
+	SiMongodb,
+	SiMysql,
+	SiNestjs,
+	SiNextdotjs,
+	SiNodedotjs,
+	SiNpm,
+	SiPhp,
+	SiPostgresql,
+	SiReact,
+	SiSass,
+	SiStyledcomponents,
+	SiTailwindcss,
+	SiTypescript,
+	SiWindicss,
+	SiWoo,
+	SiWordpress,
+	SiYarn
+} from 'react-icons/si';
 import { SkillType } from 'shared/@types/Skill';
 
 type Props = {
@@ -11,271 +45,108 @@ const SkillIcon = ({ skill, className, ...props }: Props) => {
 	const renderIcon = () => {
 		switch (skill) {
 			case 'HTML':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'icomoon-free:html-five'}
-					/>
-				);
+				return <SiHtml5 className={`${className || ''}`} />;
 
 			case 'Markdown':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:markdown'}
-					/>
-				);
+				return <SiMarkdown className={`${className || ''}`} />;
 
 			case 'CSS':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:css3'}
-					/>
-				);
+				return <SiCss3 className={`${className || ''}`} />;
 
 			case 'Sass':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:sass'}
-					/>
-				);
+				return <SiSass className={`${className || ''}`} />;
 
 			case 'Chakra UI':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:chakraui'}
-					/>
-				);
+				return <SiChakraui className={`${className || ''}`} />;
 
 			case 'Tailwind CSS':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:tailwindcss'}
-					/>
-				);
+				return <SiTailwindcss className={`${className || ''}`} />;
 
 			case 'WindiCSS':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:windicss'}
-					/>
-				);
+				return <SiWindicss className={`${className || ''}`} />;
 
 			case 'Material UI':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'mdi:material-ui'}
-					/>
-				);
+				return <SiMaterialui className={`${className || ''}`} />;
 
 			case 'Bootstrap':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'akar-icons:bootstrap-fill'}
-					/>
-				);
+				return <SiBootstrap className={`${className || ''}`} />;
 
 			case 'JavaScript':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:javascript'}
-					/>
-				);
+				return <SiJavascript className={`${className || ''}`} />;
 
 			case 'TypeScript':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:typescript'}
-					/>
-				);
+				return <SiTypescript className={`${className || ''}`} />;
 
 			case 'React':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:react'}
-					/>
-				);
+				return <SiReact className={`${className || ''}`} />;
 
 			case 'NextJS':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:nextdotjs'}
-					/>
-				);
+				return <SiNextdotjs className={`${className || ''}`} />;
 
 			case 'Styled Components':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:styledcomponents'}
-					/>
-				);
+				return <SiStyledcomponents className={`${className || ''}`} />;
 
 			case 'Angular':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:angular'}
-					/>
-				);
+				return <SiAngular className={`${className || ''}`} />;
 
 			case 'NodeJS':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:nodejs'}
-					/>
-				);
+				return <SiNodedotjs className={`${className || ''}`} />;
 
 			case 'Express':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:express'}
-					/>
-				);
+				return <SiExpress className={`${className || ''}`} />;
 
 			case 'NestJS':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:nestjs'}
-					/>
-				);
+				return <SiNestjs className={`${className || ''}`} />;
 
 			case 'PHP':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:php'}
-					/>
-				);
+				return <SiPhp className={`${className || ''}`} />;
 
 			case 'Laravel':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:laravel'}
-					/>
-				);
+				return <SiLaravel className={`${className || ''}`} />;
 
 			case 'PostgreSQL':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:postgresql'}
-					/>
-				);
+				return <SiPostgresql className={`${className || ''}`} />;
 
 			case 'MySQL':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:mysql'}
-					/>
-				);
+				return <SiMysql className={`${className || ''}`} />;
 
 			case 'MariaDB':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:mariadb'}
-					/>
-				);
+				return <SiMariadb className={`${className || ''}`} />;
 
 			case 'MongoDB':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:mongodb'}
-					/>
-				);
+				return <SiMongodb className={`${className || ''}`} />;
 
 			case 'Firebase':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:firebase'}
-					/>
-				);
+				return <SiFirebase className={`${className || ''}`} />;
 
 			case 'Linux':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:linux'}
-					/>
-				);
+				return <SiLinux className={`${className || ''}`} />;
 
 			case 'Git':
-				return (
-					<Icon className={`${className || ''}`} icon={'bi:git'} />
-				);
+				return <SiGit className={`${className || ''}`} />;
 
 			case 'NPM':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:npm'}
-					/>
-				);
+				return <SiNpm className={`${className || ''}`} />;
 
 			case 'Yarn':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:yarn'}
-					/>
-				);
+				return <SiYarn className={`${className || ''}`} />;
 
 			case 'Docker':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:docker'}
-					/>
-				);
+				return <SiDocker className={`${className || ''}`} />;
 
 			case 'WordPress':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:wordpress'}
-					/>
-				);
+				return <SiWordpress className={`${className || ''}`} />;
 
 			case 'Elementor':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'fa-brands:elementor'}
-					/>
-				);
+				return <FaElementor className={`${className || ''}`} />;
 
 			case 'WooCommerce':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:woo'}
-					/>
-				);
+				return <SiWoo className={`${className || ''}`} />;
 
 			case 'Latex':
 				return (
-					<Icon
+					<SiLatex
 						className={`${className || ''} devicon-latex-plain`}
-						icon={'file-icons:latex'}
 					/>
 				);
 
