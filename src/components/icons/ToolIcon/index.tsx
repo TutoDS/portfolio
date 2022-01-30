@@ -1,5 +1,26 @@
 import React from 'react';
-import { Icon } from '@iconify/react';
+import {
+	SiAdobeillustrator,
+	SiAdobephotoshop,
+	SiAdobexd,
+	SiAffinitydesigner,
+	SiAffinityphoto,
+	SiBitbucket,
+	SiCanva,
+	SiClickup,
+	SiFigma,
+	SiGithub,
+	SiGitlab,
+	SiInsomnia,
+	SiJira,
+	SiNetlify,
+	SiPostman,
+	SiSlack,
+	SiTrello,
+	SiVercel,
+	SiVisualstudiocode,
+	SiWebstorm
+} from 'react-icons/si';
 import { ToolType } from 'shared/@types/Tool';
 
 type Props = {
@@ -11,164 +32,64 @@ const ToolIcon = ({ tool, className, ...props }: Props) => {
 	const renderIcon = () => {
 		switch (tool) {
 			case 'GitHub':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:github'}
-					/>
-				);
+				return <SiGithub className={`${className || ''}`} />;
 
 			case 'GitLab':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:gitlab'}
-					/>
-				);
+				return <SiGitlab className={`${className || ''}`} />;
 
 			case 'Bitbucket':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:bitbucket'}
-					/>
-				);
+				return <SiBitbucket className={`${className || ''}`} />;
 
 			case 'Visual Studio Code':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:visualstudiocode'}
-					/>
-				);
+				return <SiVisualstudiocode className={`${className || ''}`} />;
 
 			case 'WebStorm':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:webstorm'}
-					/>
-				);
+				return <SiWebstorm className={`${className || ''}`} />;
 
 			case 'Insomnia':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:insomnia'}
-					/>
-				);
+				return <SiInsomnia className={`${className || ''}`} />;
 
 			case 'Postman':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:postman'}
-					/>
-				);
+				return <SiPostman className={`${className || ''}`} />;
 
 			case 'Jira':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:jira'}
-					/>
-				);
+				return <SiJira className={`${className || ''}`} />;
 
 			case 'ClickUp':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:clickup'}
-					/>
-				);
+				return <SiClickup className={`${className || ''}`} />;
 
 			case 'Slack':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:slack'}
-					/>
-				);
+				return <SiSlack className={`${className || ''}`} />;
 
 			case 'Trello':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:trello'}
-					/>
-				);
+				return <SiTrello className={`${className || ''}`} />;
 
 			case 'Adobe Photoshop':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:adobephotoshop'}
-					/>
-				);
+				return <SiAdobephotoshop className={`${className || ''}`} />;
 
 			case 'Adobe Illustrator':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:adobeillustrator'}
-					/>
-				);
+				return <SiAdobeillustrator className={`${className || ''}`} />;
 
 			case 'Affinity Designer':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:affinitydesigner'}
-					/>
-				);
+				return <SiAffinitydesigner className={`${className || ''}`} />;
 
 			case 'Affinity Photo':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:affinityphoto'}
-					/>
-				);
+				return <SiAffinityphoto className={`${className || ''}`} />;
 
 			case 'Adobe XD':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:adobexd'}
-					/>
-				);
+				return <SiAdobexd className={`${className || ''}`} />;
 
 			case 'Figma':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:figma'}
-					/>
-				);
+				return <SiFigma className={`${className || ''}`} />;
 
 			case 'Canva':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:canva'}
-					/>
-				);
+				return <SiCanva className={`${className || ''}`} />;
 
 			case 'Netlify':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:netlify'}
-					/>
-				);
+				return <SiNetlify className={`${className || ''}`} />;
 
 			case 'Vercel':
-				return (
-					<Icon
-						className={`${className || ''}`}
-						icon={'simple-icons:vercel'}
-					/>
-				);
+				return <SiVercel className={`${className || ''}`} />;
 		}
 	};
 

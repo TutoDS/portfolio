@@ -1,4 +1,4 @@
-import { Icon } from '@iconify/react';
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { useThemeMode } from 'shared/hooks/useThemeMode';
 
 type Props = {
@@ -15,13 +15,7 @@ const ModeSwitcher = ({ className, ...props }: Props) => {
 				className || ''
 			} rounded-full p-2 bg-primary-500 hover:bg-primary-600 text-white transition-all ease-in-out`}
 		>
-			<Icon
-				icon={
-					theme !== 'dark'
-						? 'clarity:moon-solid'
-						: 'akar-icons:sun-fill'
-				}
-			/>
+			{theme === 'dark' ? <BsFillMoonFill /> : <BsFillSunFill />}
 		</button>
 	);
 };
