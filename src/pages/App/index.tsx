@@ -17,7 +17,7 @@ const App = () => {
 					hi, I&apos;m <br className='block md:hidden' />
 					<span className='relative'>
 						<span className='h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent'>
-							vanntile{' '}
+							vanntile
 							<span className='text-3xl md:text-5xl'>👋</span>
 						</span>
 						<span

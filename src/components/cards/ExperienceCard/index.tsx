@@ -47,7 +47,6 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 				</small>
 				<h3 className='h4 font-bold'>
 					<Trans
-						// ns={'experience'}
 						i18nKey={title}
 						components={{
 							bold: <strong />,
