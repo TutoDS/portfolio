@@ -8,7 +8,7 @@ import {
 
 export type ThemeModeContextData = {
 	switchTheme: () => void;
-	theme: string;
+	theme: 'light' | 'dark';
 };
 
 type ThemeModeProps = {

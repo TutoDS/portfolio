@@ -1,0 +1,32 @@
+.code-bg {
+	background-image: url('/images/code.jpg');
+
+	@apply w-full h-[60vh] bg-cover relative;
+
+	// Overlay
+	@apply bg-gray-900 bg-opacity-[90%] bg-blend-overlay;
+
+	// @media screen and (max-width: 800px) {
+	// 	@apply h-[60vh];
+	// }
+}
+
+.profile-pic {
+	@apply w-[175px] h-[175px] rounded-full object-cover object-top mb-4;
+}
+
+.about-btn {
+	@apply bg-transparent gap-2 inline-flex items-center justify-center bg-opacity-25 rounded-lg px-4 py-2 mt-8 ease-out transition-all duration-200;
+
+	&:hover {
+		@apply bg-gray-200 shadow-md;
+	}
+}
+
+:global(.dark) {
+	.about-btn {
+		&:hover {
+			@apply bg-gray-700;
+		}
+	}
+}

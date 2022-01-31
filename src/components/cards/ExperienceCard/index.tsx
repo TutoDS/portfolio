@@ -5,6 +5,7 @@ import { BsBriefcaseFill } from 'react-icons/bs';
 import { FaGraduationCap } from 'react-icons/fa';
 import { HiOutlineMinus } from 'react-icons/hi';
 import { ProgressType } from 'shared/@types/Progress';
+import styles from './styles.module.scss';
 
 type Props = {
 	className?: string;
@@ -59,7 +60,6 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 			<div className='text-gray-600 dark:text-gray-400 grow my-1'>
 				<div className={'text-sm dark:text-white mb-2'}>
 					<Trans
-						// ns={'experience'}
 						i18nKey={local}
 						components={{ bold: <strong />, small: <small /> }}
 						fallback={local}
@@ -72,7 +72,7 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 			{certificate && (
 				<a
 					target={'_blank'}
-					className='dark:text-secondary-500 dark:hover:text-secondary-700 text-primary-500 hover:text-primary-700 inline-flex gap-2 items-center mt-4'
+					className={`${styles['certificate-btn']}`}
 					href={certificate}
 					rel='noreferrer'
 				>

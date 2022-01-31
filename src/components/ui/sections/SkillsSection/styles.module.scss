@@ -5,7 +5,7 @@
 }
 
 .tab-list {
-	@apply flex py-3 px-4 gap-4 rounded-xl items-center justify-center;
+	@apply flex py-3 px-4 gap-4 rounded-xl  flex-wrap items-center justify-center;
 }
 
 .tabs {
@@ -37,8 +37,6 @@
 
 .skill-container,
 .tool-container {
-	@apply #{!important};
-
 	@apply flex items-center justify-center w-24 h-24  bg-white rounded-lg shadow border-b-4 border-solid border-transparent;
 
 	&:hover {

@@ -13,7 +13,7 @@ const ModeSwitcher = ({ className, ...props }: Props) => {
 			onClick={switchTheme}
 			className={`${
 				className || ''
-			} rounded-full p-2 bg-primary-500 hover:bg-primary-600 text-white transition-all ease-in-out`}
+			} rounded-full p-2 hover:bg-primary-600 text-white transition-all ease-in-out`}
 		>
 			{theme === 'dark' ? <BsFillMoonFill /> : <BsFillSunFill />}
 		</button>

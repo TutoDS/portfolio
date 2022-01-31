@@ -1,0 +1,22 @@
+.logo {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	stroke-linejoin: round;
+	stroke-miterlimit: 2;
+}
+
+.white-path,
+.white-rect {
+	@apply fill-white;
+	fill-rule: nonzero;
+}
+
+.secondary-path {
+	@apply fill-secondary-500;
+	fill-rule: nonzero;
+}
+
+.primary-path {
+	@apply fill-primary-500;
+	fill-rule: nonzero;
+}

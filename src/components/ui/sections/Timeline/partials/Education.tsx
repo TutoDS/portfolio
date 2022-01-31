@@ -1,10 +1,10 @@
 import ExperienceCard from 'components/cards/ExperienceCard';
-import styles from 'components/ui/sections/Timeline/styles.module.scss';
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ProgressType } from 'shared/@types/Progress';
 import { educationHistory } from 'shared/data/progress';
 import slugify from 'shared/functions/slugify';
-import { useTranslation } from 'react-i18next';
+import styles from './styles.module.scss';
 
 const EducationTimeline = () => {
 	const now = new Date().getUTCFullYear();
@@ -42,8 +42,8 @@ const EducationTimeline = () => {
 	};
 
 	return (
-		<div className='flex gap'>
-			<div>
+		<div className={`${styles['grid-container']}`}>
+			<div className={`${styles['years-column']}`}>
 				<div className='relative mr-4 sm:mr-12'>
 					<div
 						className='absolute inset-0 ml-16 pointer-events-none -z-1'
@@ -85,7 +85,7 @@ const EducationTimeline = () => {
 						className={`grow ${year !== loopYear && 'hidden'}`}
 						key={`${loopYear}-data`}
 					>
-						<div className='grid grid-cols-3 gap-6'>
+						<div className='grid grip-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-6 gap-4'>
 							{yearHistory(loopYear).map(
 								(progress: ProgressType) => {
 									return (
