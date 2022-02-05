@@ -6,7 +6,7 @@ import TRANSLATIONS_EN from './locales/en';
 import TRANSLATIONS_PT from './locales/pt';
 
 i18n.use(Backend)
-	.use(new LanguageDetector(null, { lookupLocalStorage: 'language' }))
+	.use(LanguageDetector)
 	.use(initReactI18next)
 	.init({
 		// lng: 'pt',

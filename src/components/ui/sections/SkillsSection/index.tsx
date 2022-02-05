@@ -21,7 +21,7 @@ const SkillsSection = ({ ...props }) => {
 		`${styles['tabs']} ${selected && styles['selected']}`;
 
 	return (
-		<section className={'mx-auto container px-4 py-12'} {...props}>
+		<div className={'mx-auto container px-4 py-12'} {...props}>
 			<h2 className={'mb-2 text-4xl'}>{t('skills')}</h2>
 
 			<p>
@@ -33,7 +33,7 @@ const SkillsSection = ({ ...props }) => {
 
 			<div
 				className={
-					'my-12 border-r-4 rounded px-4 py-2 border-primary-500 dark:border-secondary-500 text-right flex flex-col max-w-[35%] items-end gap-2 ml-auto'
+					'my-12 border-r-4 rounded px-4 py-2 border-primary-500 dark:border-secondary-500 text-right flex flex-col max-w-[85%] md:max-w-[35%] items-end gap-2 ml-auto'
 				}
 			>
 				<RiDoubleQuotesR
@@ -246,7 +246,7 @@ const SkillsSection = ({ ...props }) => {
 					</Tab.Panel>
 				</Tab.Panels>
 			</Tab.Group>
-		</section>
+		</div>
 	);
 };
 

@@ -8,7 +8,7 @@ import {
 
 export type ThemeModeContextData = {
 	switchTheme: () => void;
-	theme: string;
+	theme: 'light' | 'dark';
 };
 
 type ThemeModeProps = {
@@ -20,7 +20,7 @@ export const ThemeModeContext = createContext({} as ThemeModeContextData);
 export const ThemeModeProvider = ({
 	children
 }: ThemeModeProps): ReactElement => {
-	const [theme, setTheme] = useState<string>('light');
+	const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
 	const switchTheme = () => {
 		setTheme(theme === 'light' ? 'dark' : 'light');

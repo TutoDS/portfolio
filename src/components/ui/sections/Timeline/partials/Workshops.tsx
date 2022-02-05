@@ -6,7 +6,7 @@ import { historyRecords } from 'shared/data/progress';
 import slugify from 'shared/functions/slugify';
 import styles from './styles.module.scss';
 
-const EducationTimeline = () => {
+const WorkshopsTimeline = () => {
 	const now = new Date().getUTCFullYear();
 	const years = Array(now - (now - 2010))
 		.fill('')
@@ -21,7 +21,7 @@ const EducationTimeline = () => {
 			historyRecords.filter(
 				(progress) =>
 					progress.startDate === year ||
-					(progress.endDate === year && progress.type === 'education')
+					(progress.endDate === year && progress.type === 'workshop')
 			).length === 0
 		) {
 			setYear((prevState) => (parseInt(prevState) - 1).toString());
@@ -36,7 +36,7 @@ const EducationTimeline = () => {
 			.sort((a, b) => (a.title > b.title ? 1 : -1))
 			.filter(
 				(progress) =>
-					(progress.type === 'education' &&
+					(progress.type === 'workshop' &&
 						progress.startDate === yearProp) ||
 					progress.endDate === yearProp
 			);
@@ -59,7 +59,7 @@ const EducationTimeline = () => {
 								(progress) =>
 									progress.startDate === loopYear ||
 									(progress.endDate === loopYear &&
-										progress.type === 'education')
+										progress.type === 'workshop')
 							).length > 0 && (
 								<button
 									key={loopYear}
@@ -108,4 +108,4 @@ const EducationTimeline = () => {
 	);
 };
 
-export default EducationTimeline;
+export default WorkshopsTimeline;

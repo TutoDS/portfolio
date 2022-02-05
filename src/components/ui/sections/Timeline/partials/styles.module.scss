@@ -1,0 +1,42 @@
+.grid-container {
+	@apply grid;
+	grid-template-columns: 100px 1fr;
+}
+
+.years-column {
+	@apply h-max sticky top-20;
+}
+
+:global(.dark) {
+	.year-btn {
+		@apply text-gray-400;
+
+		.circle {
+			@apply bg-gray-600;
+		}
+
+		&.current {
+			@apply text-secondary-500;
+
+			.circle {
+				@apply bg-secondary-500;
+			}
+		}
+	}
+}
+
+.year-btn {
+	@apply flex items-center justify-between font-medium text-gray-500 w-20 py-3 pr-2 text-left;
+
+	.circle {
+		@apply z-10 block w-3.5 h-3.5 bg-gray-400 rounded-full;
+	}
+
+	&.current {
+		@apply text-primary-500;
+
+		.circle {
+			@apply bg-primary-500;
+		}
+	}
+}

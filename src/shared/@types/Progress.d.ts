@@ -1,4 +1,4 @@
-export type TypeOfProgress = 'education' | 'work';
+export type TypeOfProgress = 'education' | 'work' | 'workshop';
 
 export type ProgressType = {
 	title: string;

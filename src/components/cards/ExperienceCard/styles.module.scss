@@ -1,0 +1,17 @@
+.certificate-btn {
+	@apply text-primary-500 inline-flex gap-2 items-center mt-4;
+
+	&:hover {
+		@apply text-primary-800;
+	}
+}
+
+:global(.dark) {
+	.certificate-btn {
+		@apply text-secondary-500;
+
+		&:hover {
+			@apply text-secondary-800;
+		}
+	}
+}
