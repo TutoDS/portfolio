@@ -15,9 +15,9 @@ const HeroSection = ({ className, ...props }: Props) => {
 			<section className='relative h-[50vh] mb-32' {...props}>
 				{/* Background image */}
 
-				<div className='absolute inset-0 h-[50vh] pt-16 box-content -z-1'>
+				<div className='absolute inset-0 h-[50vh] pt-16 box-content -z-1 [clip-path:polygon(0_0,_5760px_0,_5760px_calc(100%_-_250px),_0_100%)] bg-gray-900'>
 					<img
-						className='absolute inset-0 w-full h-full object-cover opacity-25 [clip-path:polygon(0_0,_5760px_0,_5760px_calc(100%_-_250px),_0_100%)]'
+						className='absolute inset-0 w-full h-full object-cover opacity-25'
 						src={'/images/code.jpg'}
 						width='1440'
 						height='577'
@@ -25,7 +25,7 @@ const HeroSection = ({ className, ...props }: Props) => {
 					/>
 
 					<div
-						className='absolute inset-0 bg-gradient-to-t to-gray-900/95 dark:from-gray-900 from-gray-900/75 dark:to-[unset] [clip-path:polygon(0_0,_5760px_0,_5760px_calc(100%_-_250px),_0_100%)]'
+						className='absolute inset-0 bg-gradient-to-t dark:from-gray-900'
 						aria-hidden='true'
 					></div>
 				</div>

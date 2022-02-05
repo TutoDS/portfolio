@@ -18,8 +18,6 @@ const Home = () => {
 
 			<HeroSection />
 
-			<section id='about'>teste</section>
-
 			<SkillsSection />
 
 			<Timeline />

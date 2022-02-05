@@ -5,28 +5,14 @@ import ModeSwitcher from './partials/ModeSwitcher';
 import styles from './styles.module.scss';
 
 const Header = () => {
-	const [additionalClass, setAdditionalClass] = useState<{
-		header: string;
-		logo: string;
-	}>({
-		header: '',
-		logo: 'w-[150px]'
-	});
+	const [additionalClass, setAdditionalClass] = useState<string>();
 
 	// Detect scroll and add class to header and logo
 	const listenScrollEvent = (event: Event) => {
 		if (window.scrollY < 73) {
-			return setAdditionalClass((prevState) => ({
-				...prevState,
-				header: '',
-				logo: 'w-[150px]'
-			}));
+			return setAdditionalClass('');
 		} else if (window.scrollY > 70) {
-			return setAdditionalClass((prevState) => ({
-				...prevState,
-				header: 'bg-primary-500',
-				logo: 'w-[100px]'
-			}));
+			return setAdditionalClass('bg-primary-900');
 		}
 	};
 
@@ -37,13 +23,13 @@ const Header = () => {
 	}, []);
 
 	return (
-		<header className={`${styles['header']} ${additionalClass.header}`}>
+		<header className={`${styles['header']} ${additionalClass}`}>
 			<div
 				className={
 					'container mx-auto flex gap-4 justify-between items-center'
 				}
 			>
-				<Logo className={`${additionalClass.logo}`} />
+				<Logo className={`w-[150px]`} />
 				{/* <div className='font-bold'>Daniel Sousa</div> */}
 
 				<ul className={'list-none flex gap-2 items-center'}>
