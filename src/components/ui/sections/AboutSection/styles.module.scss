@@ -1,0 +1,53 @@
+.details-card {
+	@apply px-4 py-6 rounded-lg flex flex-col items-center justify-center bg-white text-gray-900 shadow-lg;
+}
+
+:global(.dark) {
+	.details-card {
+		@apply bg-gray-700 text-white;
+	}
+}
+
+// Typing Animation - Cursor Effect
+.cursor {
+	@apply absolute -bottom-0 left-0 -top-1 inline-block bg-slate-200 w-full animate-type;
+
+	&::after {
+		display: block;
+		content: '';
+		position: absolute;
+		width: 2px;
+		height: 100%;
+
+		@apply bg-gray-900;
+
+		animation: cursor 0.6s linear infinite alternate;
+		will-change: opacity;
+	}
+}
+
+:global(.dark) {
+	.cursor {
+		@apply bg-gray-900;
+
+		&::after {
+			@apply bg-white;
+		}
+	}
+}
+
+@keyframes cursor {
+	0%,
+	40% {
+		opacity: 1;
+	}
+
+	60%,
+	100% {
+		opacity: 0;
+	}
+}
+
+.will-change {
+	will-change: transform;
+}

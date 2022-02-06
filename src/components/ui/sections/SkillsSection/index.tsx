@@ -21,7 +21,7 @@ const SkillsSection = ({ ...props }) => {
 		`${styles['tabs']} ${selected && styles['selected']}`;
 
 	return (
-		<div className={'mx-auto container px-4 py-12'} {...props}>
+		<section className={'mx-auto container px-4 py-12'} {...props}>
 			<h2 className={'mb-2 text-4xl'}>{t('skills')}</h2>
 
 			<p>
@@ -246,7 +246,7 @@ const SkillsSection = ({ ...props }) => {
 					</Tab.Panel>
 				</Tab.Panels>
 			</Tab.Group>
-		</div>
+		</section>
 	);
 };
 

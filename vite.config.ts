@@ -4,6 +4,12 @@ import viteImagemin from 'vite-plugin-imagemin';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
+	server: {
+		hmr: {
+			overlay: false
+		}
+	},
+
 	plugins: [
 		react(),
 		tsconfigPaths(),

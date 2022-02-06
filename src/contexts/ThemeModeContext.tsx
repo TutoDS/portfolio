@@ -20,7 +20,7 @@ export const ThemeModeContext = createContext({} as ThemeModeContextData);
 export const ThemeModeProvider = ({
 	children
 }: ThemeModeProps): ReactElement => {
-	const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+	const [theme, setTheme] = useState<'dark' | 'light'>('light');
 
 	const switchTheme = () => {
 		setTheme(theme === 'light' ? 'dark' : 'light');

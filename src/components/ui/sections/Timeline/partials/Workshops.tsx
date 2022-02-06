@@ -20,8 +20,9 @@ const WorkshopsTimeline = () => {
 		if (
 			historyRecords.filter(
 				(progress) =>
-					progress.startDate === year ||
-					(progress.endDate === year && progress.type === 'workshop')
+					(progress.startDate === year ||
+						progress.endDate === year) &&
+					progress.type === 'workshop'
 			).length === 0
 		) {
 			setYear((prevState) => (parseInt(prevState) - 1).toString());
@@ -36,9 +37,9 @@ const WorkshopsTimeline = () => {
 			.sort((a, b) => (a.title > b.title ? 1 : -1))
 			.filter(
 				(progress) =>
-					(progress.type === 'workshop' &&
-						progress.startDate === yearProp) ||
-					progress.endDate === yearProp
+					(progress.startDate === yearProp ||
+						progress.endDate === yearProp) &&
+					progress.type === 'workshop'
 			);
 	};
 
@@ -57,9 +58,9 @@ const WorkshopsTimeline = () => {
 						return (
 							historyRecords.filter(
 								(progress) =>
-									progress.startDate === loopYear ||
-									(progress.endDate === loopYear &&
-										progress.type === 'workshop')
+									(progress.startDate === loopYear ||
+										progress.endDate === loopYear) &&
+									progress.type === 'workshop'
 							).length > 0 && (
 								<button
 									key={loopYear}

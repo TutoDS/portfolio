@@ -37,21 +37,52 @@ module.exports = {
 			},
 
 			animation: {
-				type: 'type 3.7s ease-out .3s infinite alternate both'
+				type: 'type 2s ease-out .8s alternate both'
 			},
 			keyframes: {
 				type: {
-					'0%': { transform: 'translateX(0ch)' },
-					'5%, 10%': { transform: 'translateX(1ch)' },
-					'15%, 20%': { transform: 'translateX(2ch)' },
-					'25%, 30%': { transform: 'translateX(3ch)' },
-					'35%, 40%': { transform: 'translateX(4ch)' },
-					'45%, 50%': { transform: 'translateX(5ch)' },
-					'55%, 60%': { transform: 'translateX(6ch)' },
-					'65%, 70%': { transform: 'translateX(7ch)' },
-					'75%, 80%': { transform: 'translateX(8ch)' },
-					'85%, 90%': { transform: 'translateX(9ch)' },
-					'95%, 100%': { transform: 'translateX(11ch)' }
+					'0%': {
+						transform: 'translateX(0%)'
+					},
+					'5%, 10%': {
+						transform: 'translateX(10%)'
+					},
+					'15%, 20%': {
+						transform: 'translateX(20%)'
+					},
+					'25%, 30%': {
+						transform: 'translateX(30%)'
+					},
+					'35%, 40%': {
+						transform: 'translateX(40%)'
+					},
+					'45%, 50%': {
+						transform: 'translateX(50%)'
+					},
+					'55%, 60%': {
+						transform: 'translateX(60$)'
+					},
+					'65%, 70%': {
+						transform: 'translateX(70%)'
+					},
+					'75%, 80%': {
+						transform: 'translateX(80%)'
+					},
+					'85%, 90%': {
+						transform: 'translateX(90%)'
+					},
+					'95%, 100%': {
+						transform: 'translateX(100%)'
+					}
+				}
+			},
+
+			container: {
+				center: true,
+
+				screens: {
+					xl: '1280px',
+					'2xl': '1280px'
 				}
 			}
 		}

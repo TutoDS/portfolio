@@ -6,6 +6,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BsBriefcaseFill } from 'react-icons/bs';
 import { FaGraduationCap } from 'react-icons/fa';
+import { HiOutlinePresentationChartBar } from 'react-icons/hi';
+import WorkshopsTimeline from './partials/Workshops';
 
 type Props = {
 	className?: string;
@@ -18,10 +20,12 @@ const Timeline = ({ className, ...props }: Props) => {
 		`${styles['tabs']} ${selected && styles['selected']}`;
 
 	return (
-		<div
+		<section
 			className={`${className || ''} mx-auto container px-4 py-12`}
 			{...props}
 		>
+			<h2 className={'mb-2 text-4xl'}>{t('experience')}</h2>
+
 			<Tab.Group>
 				<Tab.List className={`${styles['tab-list']}`}>
 					<Tab className={tabStyling}>
@@ -32,6 +36,10 @@ const Timeline = ({ className, ...props }: Props) => {
 						<BsBriefcaseFill />
 						{t('experience')}
 					</Tab>
+					<Tab className={tabStyling}>
+						<HiOutlinePresentationChartBar />
+						Workshops
+					</Tab>
 				</Tab.List>
 				<Tab.Panels className={'pb-2 pt-6 px-4'}>
 					<Tab.Panel>
@@ -40,9 +48,12 @@ const Timeline = ({ className, ...props }: Props) => {
 					<Tab.Panel>
 						<ProfessionalExperienceTimeline />
 					</Tab.Panel>
+					<Tab.Panel>
+						<WorkshopsTimeline />
+					</Tab.Panel>
 				</Tab.Panels>
 			</Tab.Group>
-		</div>
+		</section>
 	);
 };
 

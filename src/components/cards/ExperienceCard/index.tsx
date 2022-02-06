@@ -3,7 +3,7 @@ import { Trans, useTranslation } from 'react-i18next';
 import { BiChevronRight } from 'react-icons/bi';
 import { BsBriefcaseFill } from 'react-icons/bs';
 import { FaGraduationCap } from 'react-icons/fa';
-import { HiOutlineMinus } from 'react-icons/hi';
+import { HiOutlineMinus, HiOutlinePresentationChartBar } from 'react-icons/hi';
 import { ProgressType } from 'shared/@types/Progress';
 import styles from './styles.module.scss';
 
@@ -31,6 +31,8 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 			<header>
 				{type === 'education' ? (
 					<FaGraduationCap className={iconStyles} />
+				) : type === 'workshop' ? (
+					<HiOutlinePresentationChartBar className={iconStyles} />
 				) : (
 					<BsBriefcaseFill className={iconStyles} />
 				)}
@@ -61,7 +63,12 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 				<div className={'text-sm dark:text-white mb-2'}>
 					<Trans
 						i18nKey={local}
-						components={{ bold: <strong />, small: <small /> }}
+						components={{
+							bold: <strong />,
+							small: <small />,
+							dot: <>.</>,
+							separator: <HiOutlineMinus className={'inline'} />
+						}}
 						fallback={local}
 					/>
 				</div>

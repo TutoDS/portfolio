@@ -12,10 +12,9 @@ const HeroSection = ({ className, ...props }: Props) => {
 
 	return (
 		<>
-			<section className='relative h-[50vh] mb-32' {...props}>
+			<section className='relative h-[650px]' {...props}>
 				{/* Background image */}
-
-				<div className='absolute inset-0 h-[50vh] pt-16 box-content -z-1 [clip-path:polygon(0_0,_5760px_0,_5760px_calc(100%_-_250px),_0_100%)] bg-gray-900'>
+				<div className='absolute inset-0 h-[570px] pt-16 box-content -z-1 bg-gray-900'>
 					<img
 						className='absolute inset-0 w-full h-full object-cover opacity-25'
 						src={'/images/code.jpg'}
@@ -30,23 +29,23 @@ const HeroSection = ({ className, ...props }: Props) => {
 					></div>
 				</div>
 
-				<div className='relative max-w-6xl mx-auto px-4 sm:px-6 h-full'>
-					<div className='pt-32 pb-12 md:pt-40 md:pb-20'>
+				<div className='relative max-w-6xl mx-auto px-4 sm:px-6'>
+					<div className='pt-32 md:pt-44'>
 						<div className='text-center'>
 							<div className='relative flex justify-center items-center'>
 								<div
 									className='relative inline-flex items-start'
-									data-aos='fade-up'
+									data-aos='fade-down'
 								>
 									<img
-										className='shadow-lg rounded-lg shadow-black dark:shadow-gray-900'
+										className='rounded shadow-sm shadow-gray-900'
 										src={'/images/code.jpg'}
 										width='768'
 										height='432'
-										alt='About hero'
+										alt='React'
 									/>
 									<div
-										className='absolute inset-0 bg-gradient-to-t from-gray-900 bg-opacity-95'
+										className='absolute inset-0 bg-gradient-to-t from-gray-900 bg-opacity-95 rounded'
 										aria-hidden='true'
 									></div>
 								</div>
@@ -70,7 +69,7 @@ const HeroSection = ({ className, ...props }: Props) => {
 									</h2>
 
 									<a
-										href='#'
+										href='#about'
 										className={
 											'mt-12 inline-flex items-center gap-2 justify-center hover:text-secondary-500 transition-all ease-in-out text-lg'
 										}
@@ -81,73 +80,13 @@ const HeroSection = ({ className, ...props }: Props) => {
 										{t('aboutMe')}
 									</a>
 								</div>
-								{/* <div
-									className='absolute bottom-0 -mb-8 w-0.5 h-16 bg-gray-300 dark:bg-gray-700'
-									aria-hidden='true'
-								></div> */}
 							</div>
-
-							{/* <div className='max-w-6xl mx-auto px-4 sm:px-6 absolute -bottom-32'>
-								<div className=''>
-									<div className='max-w-xs mx-auto md:max-w-[75%] grid sm:grid-cols-2 gap-4 lg:gap-6 lg:grid-cols-3'>
-										<div
-											className='flex flex-col items-center justify-center p-5 group text-white bg-gradient-to-tr from-primary-500 to-primary-600 shadow-lg dark:shadow-gray-800 '
-											data-aos='fade-down'
-										>
-											<CgWebsite
-												className={'text-4xl mb-4'}
-											/>
-											<div className='text-xl font-[600] tracking-tighter mb-1'>
-												{t('webDevelopment')}
-											</div>
-											<div className='opacity-80'>
-												Lorem ipsum dolor amet sit
-												consect adipiscing.
-											</div>
-										</div>
-
-										<div
-											className='flex flex-col items-center justify-center p-5 group text-white bg-gradient-to-tr from-primary-500 to-primary-600 shadow-lg dark:shadow-gray-800 '
-											data-aos='fade-down'
-										>
-											<CgWebsite
-												className={'text-4xl mb-4'}
-											/>
-											<div className='text-xl font-[600] tracking-tighter mb-1'>
-												{t('webDevelopment')}
-											</div>
-											<div className='opacity-80'>
-												Lorem ipsum dolor amet sit
-												consect adipiscing.
-											</div>
-										</div>
-
-										<div
-											className='flex flex-col items-center justify-center p-5 group text-white bg-gradient-to-tr from-primary-500 to-primary-600 shadow-lg dark:shadow-gray-800 '
-											data-aos='fade-down'
-										>
-											<CgWebsite
-												className={'text-4xl mb-4'}
-											/>
-											<div className='text-xl font-[600] tracking-tighter mb-1'>
-												{t('webDevelopment')}
-											</div>
-											<div className='opacity-80'>
-												Lorem ipsum dolor amet sit
-												consect adipiscing.
-											</div>
-										</div>
-									</div>
-								</div>
-							</div> */}
 						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* <section className={'-mt-20 z-50'}>
-
-			</section> */}
+			<div className={'mb-12'}></div>
 		</>
 	);
 };

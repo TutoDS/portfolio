@@ -12,7 +12,7 @@ const Header = () => {
 		if (window.scrollY < 73) {
 			return setAdditionalClass('');
 		} else if (window.scrollY > 70) {
-			return setAdditionalClass('bg-primary-900');
+			return setAdditionalClass(`bg-primary-900 shadow`);
 		}
 	};
 
@@ -30,7 +30,6 @@ const Header = () => {
 				}
 			>
 				<Logo className={`w-[150px]`} />
-				{/* <div className='font-bold'>Daniel Sousa</div> */}
 
 				<ul className={'list-none flex gap-2 items-center'}>
 					<li>Home</li>
