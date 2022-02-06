@@ -22,7 +22,9 @@ const SkillsSection = ({ ...props }) => {
 
 	return (
 		<section className={'mx-auto container px-4 py-12'} {...props}>
-			<h2 className={'mb-2 text-4xl'}>{t('skills')}</h2>
+			<h2 className={'h2 text-xl lg:text-2xl font-bold mb-2'}>
+				{t('skills')}
+			</h2>
 
 			<p>
 				<Trans

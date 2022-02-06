@@ -73,7 +73,18 @@ const ExperienceCard = ({ className, children, progress, ...props }: Props) => {
 					/>
 				</div>
 
-				{children && children}
+				{children && (
+					<Trans
+						is18nKey={children}
+						components={{
+							bold: <strong />,
+							small: <small />,
+							dot: <>.</>,
+							separator: <HiOutlineMinus className={'inline'} />
+						}}
+						fallback={children}
+					/>
+				)}
 			</div>
 
 			{certificate && (

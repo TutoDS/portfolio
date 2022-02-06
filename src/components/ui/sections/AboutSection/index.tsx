@@ -26,7 +26,7 @@ const AboutSection = ({ className, id, ...props }: Props) => {
 				/>
 
 				<div data-aos='fade-down' className={'flex flex-col gap-4'}>
-					<h2 className={'h2 lg:text-3xl font-bold mb-2'}>
+					<h2 className={'h2 text-xl lg:text-2xl font-bold mb-2'}>
 						{t('aboutMe')}
 					</h2>
 
