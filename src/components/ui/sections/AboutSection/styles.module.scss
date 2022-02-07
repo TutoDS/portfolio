@@ -1,5 +1,5 @@
 .details-card {
-	@apply px-4 py-6 rounded-lg flex flex-col items-center justify-center bg-white text-gray-900 shadow-lg;
+	@apply flex flex-col items-center justify-center rounded-lg bg-white px-4 py-6 text-center text-gray-900 shadow-lg;
 }
 
 :global(.dark) {
@@ -10,7 +10,7 @@
 
 // Typing Animation - Cursor Effect
 .cursor {
-	@apply absolute -bottom-0 left-0 -top-1 inline-block bg-slate-200 w-full animate-type;
+	@apply absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-slate-200;
 
 	&::after {
 		display: block;

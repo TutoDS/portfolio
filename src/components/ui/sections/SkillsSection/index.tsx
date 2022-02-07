@@ -21,8 +21,8 @@ const SkillsSection = ({ ...props }) => {
 		`${styles['tabs']} ${selected && styles['selected']}`;
 
 	return (
-		<section className={'mx-auto container px-4 py-12'} {...props}>
-			<h2 className={'h2 text-xl lg:text-2xl font-bold mb-2'}>
+		<section className={'container mx-auto px-4 py-6'} {...props}>
+			<h2 className={'h2 mb-2 text-xl font-bold lg:text-2xl'}>
 				{t('skills')}
 			</h2>
 
@@ -35,7 +35,7 @@ const SkillsSection = ({ ...props }) => {
 
 			<div
 				className={
-					'my-12 border-r-4 rounded px-4 py-2 border-primary-500 dark:border-secondary-500 text-right flex flex-col max-w-[85%] md:max-w-[35%] items-end gap-2 ml-auto'
+					'my-12 ml-auto flex max-w-[85%] flex-col items-end gap-2 rounded border-r-4 border-primary-500 px-4 py-2 text-right dark:border-secondary-500 md:max-w-[35%]'
 				}
 			>
 				<RiDoubleQuotesR
@@ -47,7 +47,7 @@ const SkillsSection = ({ ...props }) => {
 					The future belongs to those who learn more skills and
 					combine them in creative ways.
 				</p>
-				<h6 className={'font-bold text-sm'}>Robert Greene</h6>
+				<h6 className={'text-sm font-bold'}>Robert Greene</h6>
 			</div>
 
 			<Tab.Group>
@@ -77,18 +77,18 @@ const SkillsSection = ({ ...props }) => {
 						{t('tools')}
 					</Tab>
 				</Tab.List>
-				<Tab.Panels className={'pb-2 pt-6 px-4'}>
+				<Tab.Panels className={'px-4 pb-2 pt-6'}>
 					<Tab.Panel>
 						<ReactTooltip
 							type={'dark'}
 							place={'top'}
 							effect={'solid'}
-							className={'bg-black shadow text-white'}
+							className={'bg-black text-white shadow'}
 						/>
 
 						<div
 							className={
-								'flex flex-wrap gap-8 items-center justify-center'
+								'flex flex-wrap items-center justify-center gap-8'
 							}
 						>
 							{useSkills('Front-end').map((skill) => {
@@ -111,12 +111,12 @@ const SkillsSection = ({ ...props }) => {
 							type={'dark'}
 							place={'top'}
 							effect={'solid'}
-							className={'bg-black shadow text-white'}
+							className={'bg-black text-white shadow'}
 						/>
 
 						<div
 							className={
-								'flex flex-wrap gap-8 items-center justify-center'
+								'flex flex-wrap items-center justify-center gap-8'
 							}
 						>
 							{useSkills('Back-end').map((skill) => {
@@ -139,12 +139,12 @@ const SkillsSection = ({ ...props }) => {
 							type={'dark'}
 							place={'top'}
 							effect={'solid'}
-							className={'bg-black shadow text-white'}
+							className={'bg-black text-white shadow'}
 						/>
 
 						<div
 							className={
-								'flex flex-wrap gap-8 items-center justify-center'
+								'flex flex-wrap items-center justify-center gap-8'
 							}
 						>
 							{useSkills('DevOps').map((skill) => {
@@ -167,12 +167,12 @@ const SkillsSection = ({ ...props }) => {
 							type={'dark'}
 							place={'top'}
 							effect={'solid'}
-							className={'bg-black shadow text-white'}
+							className={'bg-black text-white shadow'}
 						/>
 
 						<div
 							className={
-								'flex flex-wrap gap-8 items-center justify-center'
+								'flex flex-wrap items-center justify-center gap-8'
 							}
 						>
 							{useSkills('Databases').map((skill) => {
@@ -195,12 +195,12 @@ const SkillsSection = ({ ...props }) => {
 							type={'dark'}
 							place={'top'}
 							effect={'solid'}
-							className={'bg-black shadow text-white'}
+							className={'bg-black text-white shadow'}
 						/>
 
 						<div
 							className={
-								'flex flex-wrap gap-8 items-center justify-center'
+								'flex flex-wrap items-center justify-center gap-8'
 							}
 						>
 							{useSkills('Others').map((skill) => {
@@ -223,12 +223,12 @@ const SkillsSection = ({ ...props }) => {
 							type={'dark'}
 							place={'top'}
 							effect={'solid'}
-							className={'bg-black shadow text-white'}
+							className={'bg-black text-white shadow'}
 						/>
 
 						<div
 							className={
-								'flex flex-wrap gap-8 items-center justify-center'
+								'flex flex-wrap items-center justify-center gap-8'
 							}
 						>
 							{tools.map((tool) => {

@@ -16,52 +16,42 @@ const WorkshopsTimeline = () => {
 
 	const [year, setYear] = useState('2022');
 
-	useEffect(() => {
-		if (
-			historyRecords.filter(
-				(progress) =>
-					(progress.startDate === year ||
-						progress.endDate === year) &&
-					progress.type === 'workshop'
-			).length === 0
-		) {
-			setYear((prevState) => (parseInt(prevState) - 1).toString());
-		}
-		// eslint-disable-next-line
-	}, []);
-
 	const yearHistory = (yearProp: string) => {
 		const data = historyRecords;
 
 		return data
 			.sort((a, b) => (a.title > b.title ? 1 : -1))
+			.filter((progress) => progress.type === 'workshop')
 			.filter(
 				(progress) =>
-					(progress.startDate === yearProp ||
-						progress.endDate === yearProp) &&
-					progress.type === 'workshop'
+					progress.startDate === yearProp ||
+					progress.endDate === yearProp ||
+					(progress.endDate === 'Atualidade' &&
+						yearProp === new Date().getUTCFullYear().toString())
 			);
 	};
+
+	useEffect(() => {
+		if (yearHistory(year).length === 0) {
+			setYear((prevState) => (parseInt(prevState) - 1).toString());
+		}
+		// eslint-disable-next-line
+	}, []);
 
 	return (
 		<div className={`${styles['grid-container']}`}>
 			<div className={`${styles['years-column']}`}>
 				<div className='relative mr-4 sm:mr-12'>
 					<div
-						className='absolute inset-0 ml-16 pointer-events-none -z-1'
+						className='-z-1 pointer-events-none absolute inset-0 ml-16'
 						aria-hidden='true'
 					>
-						<div className='absolute rounded-lg inset-0 w-0.5 h-full bg-gray-300 dark:bg-gray-600'></div>
+						<div className='absolute inset-0 h-full w-0.5 rounded-lg bg-gray-300 dark:bg-gray-600'></div>
 					</div>
 
 					{years.map((loopYear) => {
 						return (
-							historyRecords.filter(
-								(progress) =>
-									(progress.startDate === loopYear ||
-										progress.endDate === loopYear) &&
-									progress.type === 'workshop'
-							).length > 0 && (
+							yearHistory(loopYear).length > 0 && (
 								<button
 									key={loopYear}
 									className={`${styles['year-btn']} ${
@@ -88,16 +78,14 @@ const WorkshopsTimeline = () => {
 						className={`grow ${year !== loopYear && 'hidden'}`}
 						key={`${loopYear}-data`}
 					>
-						<div className='grid grip-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-6 gap-4'>
+						<div className='grip-cols-1 grid gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-6'>
 							{yearHistory(loopYear).map(
 								(progress: ProgressType) => {
 									return (
 										<ExperienceCard
 											key={slugify(progress.title)}
 											progress={progress}
-										>
-											{progress.description}
-										</ExperienceCard>
+										/>
 									);
 								}
 							)}

@@ -21,10 +21,10 @@ const Timeline = ({ className, ...props }: Props) => {
 
 	return (
 		<section
-			className={`${className || ''} mx-auto container px-4 py-12`}
+			className={`${className || ''} container mx-auto px-4 py-6`}
 			{...props}
 		>
-			<h2 className={'h2 text-xl lg:text-2xl font-bold mb-2'}>
+			<h2 className={'h2 mb-2 text-xl font-bold lg:text-2xl'}>
 				{t('experienceTitle')}
 			</h2>
 
@@ -43,7 +43,7 @@ const Timeline = ({ className, ...props }: Props) => {
 						Workshops
 					</Tab>
 				</Tab.List>
-				<Tab.Panels className={'pb-2 pt-6 px-4'}>
+				<Tab.Panels className={'px-4 pb-2 pt-6'}>
 					<Tab.Panel>
 						<EducationTimeline />
 					</Tab.Panel>

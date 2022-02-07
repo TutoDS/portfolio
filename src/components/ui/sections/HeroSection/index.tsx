@@ -12,11 +12,11 @@ const HeroSection = ({ className, ...props }: Props) => {
 
 	return (
 		<>
-			<section className='relative h-[650px]' {...props}>
+			<section className='relative h-[450px] md:h-[650px]' {...props}>
 				{/* Background image */}
-				<div className='absolute inset-0 h-[570px] pt-16 box-content -z-1 bg-gray-900'>
+				<div className='-z-1 absolute inset-0 box-content h-[300px] bg-gray-900 pt-16 md:h-[570px]'>
 					<img
-						className='absolute inset-0 w-full h-full object-cover opacity-25'
+						className='absolute inset-0 h-full w-full object-cover opacity-25'
 						src={'/images/code.jpg'}
 						width='1440'
 						height='577'
@@ -29,10 +29,10 @@ const HeroSection = ({ className, ...props }: Props) => {
 					></div>
 				</div>
 
-				<div className='relative max-w-6xl mx-auto px-4 sm:px-6'>
+				<div className='relative mx-auto max-w-6xl px-4 sm:px-6'>
 					<div className='pt-32 md:pt-44'>
 						<div className='text-center'>
-							<div className='relative flex justify-center items-center'>
+							<div className='relative flex items-center justify-center'>
 								<div
 									className='relative inline-flex items-start'
 									data-aos='fade-down'
@@ -45,12 +45,12 @@ const HeroSection = ({ className, ...props }: Props) => {
 										alt='React'
 									/>
 									<div
-										className='absolute inset-0 bg-gradient-to-t from-gray-900 bg-opacity-95 rounded'
+										className='absolute inset-0 rounded bg-opacity-95 bg-gradient-to-t from-gray-900'
 										aria-hidden='true'
 									></div>
 								</div>
 								<div
-									className='absolute text-white flex flex-col justify-center items-center'
+									className='absolute flex flex-col items-center justify-center text-white'
 									data-aos='fade-down'
 								>
 									<img
@@ -58,7 +58,7 @@ const HeroSection = ({ className, ...props }: Props) => {
 										src={profilePic}
 									/>
 
-									<h1 className='h1 lg:text-4xl font-bold'>
+									<h1 className='h1 font-bold lg:text-4xl'>
 										Daniel &nbsp;
 										<span className='text-secondary-500'>
 											Sousa
@@ -71,7 +71,7 @@ const HeroSection = ({ className, ...props }: Props) => {
 									<a
 										href='#about'
 										className={
-											'mt-12 inline-flex items-center gap-2 justify-center hover:text-secondary-500 transition-all ease-in-out text-lg'
+											'mt-3 inline-flex items-center justify-center gap-2 text-lg transition-all ease-in-out hover:text-secondary-500 md:mt-12'
 										}
 									>
 										<BsChevronDown

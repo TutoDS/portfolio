@@ -13,27 +13,33 @@ const AboutSection = ({ className, id, ...props }: Props) => {
 
 	return (
 		<section
-			className={`mx-auto container px-4 py-12 ${className || ''}`}
+			className={`container mx-auto px-4 py-6 ${className || ''}`}
 			id={id}
 			{...props}
 		>
-			<div className={'flex gap-12 items-center'}>
+			<div
+				className={
+					'flex flex-col items-center gap-6 sm:flex-row sm:gap-12'
+				}
+			>
 				<img
 					data-aos='fade-down'
 					src={profilePic}
 					alt='Daniel Sousa'
-					className={'rounded-lg w-[350px]'}
+					className={
+						'h-[350px] w-full rounded-lg object-cover object-top sm:h-auto sm:w-[350px]'
+					}
 				/>
 
 				<div data-aos='fade-down' className={'flex flex-col gap-4'}>
-					<h2 className={'h2 text-xl lg:text-2xl font-bold mb-2'}>
+					<h2 className={'h2 mb-2 text-xl font-bold lg:text-2xl'}>
 						{t('aboutMe')}
 					</h2>
 
 					<div>
-						<h3 className='text-lg md:text-xl mb-1'>
+						<h3 className='mb-1 text-lg md:text-xl'>
 							<span className={'relative'}>
-								<span className='h-12 pt-2 overflow-x-hidden whitespace-nowrap'>
+								<span className='h-12 overflow-x-hidden whitespace-nowrap pt-2'>
 									<Trans
 										i18nKey={'intro'}
 										components={{
@@ -48,7 +54,7 @@ const AboutSection = ({ className, id, ...props }: Props) => {
 											colored: (
 												<span
 													className={
-														'font-bold dark:text-secondary-500 text-primary-500'
+														'font-bold text-primary-500 dark:text-secondary-500'
 													}
 												/>
 											)
@@ -76,27 +82,29 @@ const AboutSection = ({ className, id, ...props }: Props) => {
 					</div>
 
 					<div className={''}>
-						<h3 className={'mb-3 text-lg md:text-xl font-bold'}>
+						<h3 className={'mb-3 text-lg font-bold md:text-xl'}>
 							{t('someDetails')}
 						</h3>
 
-						<div className={'grid grid-cols-3 gap-4'}>
+						<div
+							className={'grid grid-cols-2 gap-4 sm:grid-cols-3'}
+						>
 							<div className={`${styles['details-card']}`}>
-								<span className='font-bold text-lg md:text-2xl'>
+								<span className='text-lg font-bold md:text-2xl'>
 									<small>+</small> 10
 								</span>
 								<span>{t('freelancerProjects')}</span>
 							</div>
 
 							<div className={`${styles['details-card']}`}>
-								<span className='font-bold text-lg md:text-2xl'>
+								<span className='text-lg font-bold md:text-2xl'>
 									3
 								</span>
 								<span>{t('yearsOfExperience')}</span>
 							</div>
 
 							<div className={`${styles['details-card']}`}>
-								<span className='font-bold text-lg md:text-2xl'>
+								<span className='text-lg font-bold md:text-2xl'>
 									<small>+</small> 10
 								</span>
 								<span>Projetos em Freelance</span>
