@@ -12,10 +12,10 @@
 // Custom body
 @layer base {
 	body {
-		@apply bg-slate-200 text-[#333] dark:bg-gray-900 dark:text-white min-h-screen;
+		@apply dark: min-h-screen bg-slate-200 bg-gray-900 text-[#333] dark:text-white;
 	}
-}
 
-html {
-	scroll-behavior: smooth;
+	html {
+		scroll-behavior: smooth;
+	}
 }
